@@ -1,4 +1,4 @@
-"use strict";
+ "use strict";
 
 // Lesson 05 Variables/ Переменные
 let number = 5;
@@ -26,7 +26,7 @@ console.log('string' * 9);
 // null
 // console.log(something);
 
-// underfined
+// underfin
 let one;
 console.log(one); 
 
@@ -41,10 +41,43 @@ console.log(user.name);
 // есть еще один вариан обращения к св-ву обьекта(но его лучше избегать)
 console.log(user["name"]);
 
+const objTwo = {
+    Anna: 500,
+    'Alice': 800,
+    3: 129
+};
+// чтобы получить значение обьекта мы обращ-я к нему либо через . либо []
+console.log(objTwo.Alice);
+console.log(objTwo.Anna);
+console.log(objTwo[3]);
+
+const arrObj = {
+    a: 'a',
+    '1': 'b',
+    2: 'c',
+    abc: {
+        df: [{}, {}],
+        def: {
+
+        }
+    }
+};
+arrObj.b = '1234';
+// или
+// arrObj['b'] = '1234';
+console.log(arrObj['b']);
+// или
+console.log(arrObj.b);
+
 // Array или массив - может содержать в себе, как и обьект все виды данных
 let arr = ['plum.jpg', 6, 'apple', {}, [] ];
 // пример обращения к элементу массива, нумерация начинается с 0!
 console.log(arr[2]);
+
+const arrTwo = ['a', 'b', 'c'];
+arrTwo[10] = '3456';
+// так не нужно делать, т.к у нас появл-ся 7 пустых ячеек!
+console.log(arrTwo);
 
 
 // Lesson 07 connection with users
@@ -77,5 +110,7 @@ answerUsers[2] = prompt('How old You ?', '');
 // document.write('Hello');
 
 // выведим массив с нашими ответами в браузер
-document.write(answerUsers );
+document.write(answerUsers);
+
+// console.log(typeof(answerUsers));
 

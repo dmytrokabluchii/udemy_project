@@ -1,6 +1,6 @@
 "use strict";
 
-// Lesson 08 Interpolation (ES6)
+// Lesson 14 Interpolation (ES6)
 // const category = 'toys';
 // console.log(`https://someurl.com/${category}/5`);
 
@@ -8,7 +8,7 @@
 // alert(`Hello, ${user}!`);
 
 
-// Lesson 09 Operators
+// Lesson 15 Operators
 // оператор сложения и унарный оператор
 console.log(4 + '5');
 console.log(4 + +'5');
