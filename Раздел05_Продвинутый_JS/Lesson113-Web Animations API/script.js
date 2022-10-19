@@ -70,6 +70,7 @@ btnMacbook.addEventListener('click', () => {
 
 
 
+
 // Web Animations API
 // В Web Animations API открывает анимацию на движке браузеров для разработчиков и манипуляции через (с помощью) JavaScript.
 // Этот API был разработан в основе реализации CSS Animations и CSS Transitions, и оставлял свободу движений для будущих 
