@@ -131,6 +131,42 @@ let resultArr80 = (arr80[0] * arr80[1]) + (arr80[2] * arr80[3]);
 console.log(resultArr80);   // 37
 
 
+let heroes = [
+    {name: 'Batman', franchise: 'DC'},
+    {name: 'Ironman', franchise: 'Marvel'},
+    {name: 'Thor', franchise: 'Marvel'},
+    {name: 'Superman', franchise: 'DC'}
+];
+
+let marvelHeroes =  heroes.filter(function(hero) {
+    return hero.franchise == 'Marvel';
+});
+console.log(marvelHeroes);
+
+let heroes2 = [
+    ['Batman', 'DC'],
+    ['Ironman', 'Marvel'],
+    ['Thor', 'Marvel'],
+    ['Superman', 'DC']
+];
+// console.log(heroes2[0]);
+
+let marvelHeroes2 =  heroes2.filter(function(hero) {
+    return hero[0] === 'Superman';
+    // return hero[1] === 'Marvel';
+});
+console.log(marvelHeroes2);      // ['Superman', 'DC']
+
+
+// Упрощение вложенных массивов
+let arr333 = [1, 2, [3, 4, [5, 6]]];
+arr333.flat(2);
+// console.log(arr333);
+// Метод flat удаляет пустые слоты из массива:
+let arr444 = [1, 2, , 4, 5];
+arr444.flat();               // [1, 2, 4, 5]
+
+
 
 
 //                                              Шпаргалка по методам массива:
@@ -167,3 +203,8 @@ console.log(resultArr80);   // 37
 // - Array.isArray(arr) проверяет, является ли arr массивом.
 // Обратите внимание, что методы sort, reverse и splice изменяют исходный массив.
 // Изученных нами методов достаточно в 99% случаев, но существуют и другие.
+
+// .flat()
+// Метод flat() возвращает новый массив, в котором все элементы вложенных подмассивов были рекурсивно "подняты" 
+// на указанный уровень depth.
+// Метод flat удаляет пустые слоты из массива:
